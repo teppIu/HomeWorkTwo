@@ -33,13 +33,14 @@ class ViewController: UIViewController {
         nextButton.backgroundColor = .white
         nextButton.layer.cornerRadius = 17
         nextButton.titleLabel?.font = UIFont.systemFont(ofSize: 35)
-        nextButton.setTitle("NEXT", for: .normal)
+        nextButton.setTitle("START", for: .normal)
         
     }
 
     @IBAction func changeColorBotton() {
         if redView.alpha == 0.5 {
             redView.alpha = 1
+            nextButton.setTitle("NEXT", for: .normal)
         } else if redView.alpha == 1 {
             redView.alpha = 0.4
             yellowView.alpha = 1
